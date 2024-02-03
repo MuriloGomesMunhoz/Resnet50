@@ -19,7 +19,7 @@ transform = transforms.Compose([
 ])
 
 # Dataset e DataLoader
-imagenet_validation_dir = '~/DeepLearningExamples/PyTorch/Classification/val'  # Atualize este caminho
+imagenet_validation_dir = '/workspace/train/n02100583'  # Atualize este caminho
 imagenet_dataset = datasets.ImageFolder(imagenet_validation_dir, transform=transform)
 imagenet_loader = torch.utils.data.DataLoader(imagenet_dataset, batch_size=64, shuffle=False)
 
